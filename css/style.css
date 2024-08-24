@@ -243,7 +243,8 @@ a {
 }
 
 .servicos-item-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
 .servico-box {
@@ -256,12 +257,20 @@ a {
   border: 2px solid #6f5300;
   padding: 30px 20px;
   display: grid;
-  gap: 0px 20px;
+  gap: 20px;
   border-radius: 4px;
 }
+
 .servicos-box-detalhe img {
   justify-self: center;
+
 }
+.servicos-box img{
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+}
+
 .servicos-box-detalhe h3 {
   justify-self: center;
 }
@@ -269,6 +278,87 @@ a {
   line-height: 1.5;
   font-size: 20px;
 }
+
+#contactos{
+  max-width: 1140px;
+  margin: 0 auto;
+  z-index: -1;
+}
+.btn_vermais{
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: linear-gradient(#ffe482, #ffaa00);
+  font-weight: 500;
+  color: #000;
+  display: inline-block;
+  margin: 10px 0px 20px 0 ;
+}
+
+#contactos {
+
+z-index: -5;
+}
+.contactos h2{
+  margin: 20px 0px 40px 0px;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-size: 30px;
+  position: relative;
+}
+.contactos h2::after {
+  content: "";
+  width: 165px;
+  height: 4px;
+background: #ebbe1d;
+  left: -1px;
+  top: -15px;
+  position: absolute;
+  border-radius: 2px;
+}
+.contactos h2::before {
+  content: "";
+  width: 65px;
+  height: 4px;
+  background: #ebbe1d;
+  right: 2px;
+  top: 45px;
+  position: absolute;
+  border-radius: 2px;
+}
+.contactos-info{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 200px;
+  color: #D9D9D9 ;
+ 
+}
+.contactos-info-endereco{
+  padding: 20px;
+ ;
+}
+.contactos-info-endereco p, .horario p{
+padding: 10px;
+}
+.horario{
+ padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+
+
+}
+.horario p{
+  margin-top: 10px;
+}
+.realce-contacto{
+  color: #EBBE1D;
+}
+footer{
+  border-top: 1px solid #757575;
+}
+
 
 /* 
 
