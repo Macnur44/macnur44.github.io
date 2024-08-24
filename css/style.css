@@ -1,0 +1,352 @@
+body{
+  background: #212123;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainscreen {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.header img {
+  margin-top: 30px;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  /* padding: 0px 65px 10px 75px; */
+
+}
+
+.menu-topo {
+  justify-self: flex-end;
+  margin-right: 10px;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+.menu a {
+  padding: 10px 0px;
+  color: #d9d9d9;
+}
+.menu a{
+  border-bottom: 2px solid #212123;
+}
+.menu a:first-child{
+  border-bottom: 2px solid #ebbe1d;
+  color: #ebbe1d; 
+}
+.menu a:hover {
+  border-bottom: 2px solid #ebbe1d;
+  color: #ebbe1d;  
+  transition: 0.5s;
+}
+.menu a,
+.agendamento a {
+  text-decoration: none;
+}
+.agendamento {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background: linear-gradient(#ffe482, #ffaa00);
+  font-weight: 500;
+  color: #000;
+}
+.agendamento-online {
+  padding: 10px;
+  border-radius: 4px;
+  background: linear-gradient(#ffe482, #ffaa00);
+  font-weight: 500;
+  color: #000;
+}
+.foco-cta:hover{
+  background: #000;
+  color: #b7b7b7;
+  transition: .4s;
+}
+/* Section Banner */
+h1, h2, h3, p{
+  margin: 0;
+  padding: 0;
+}
+.banner{
+  max-width: 1140px;
+margin: 30px auto 0 0;
+
+}
+.banner-grid{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.banner-items{
+display: grid;
+gap: 50px;
+align-content: center;
+  /* margin-left: 125px; */
+}
+.banner-items h1{
+  font-size: 50px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-family: crimson text;
+  color: #f1f1f1;
+height: 50%;
+}
+.banner-items p{
+  font-size: 20px;
+  font-weight: 300;
+  color: #b7b7b7;
+  line-height: 1.5;
+  margin-top: -40px;
+  letter-spacing: 2px;
+}
+img{
+  max-width: 100%;
+}
+a{
+text-decoration: none;
+}
+.btn_primario{
+ place-self: flex-start;
+  line-height: 1.2;
+  padding: 15px 20px;
+font-weight: 600;
+color: #2b2b2d ;
+display:block;
+letter-spacing:2px;
+}
+.banner-img{
+display: grid;
+justify-content: flex-end;
+}
+.foto{
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+  display: block;
+  max-width: 100%;
+border-radius: 150px 150px 150px 150px;
+}
+
+.grid-center{
+display: grid;
+justify-items: center;
+}
+.titulo h2{
+  margin: 20px 0px 40px 0px;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-size: 30px;
+} 
+.titulo{
+  position: relative;
+}
+.detalhe{
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: #ebbe1d;
+  left: 1px;
+  top: 5px;
+  position: absolute;
+  border-radius: 2px;
+
+}
+.detalhe2{
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #ebbe1d;
+  left: 115px;
+  top: 62px;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.aboutus-itens{
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 20px;
+}
+.aboutus-itens img{
+  display: block;
+}
+.paragrafo{
+display: grid;
+line-height: 1.5;
+font-size: 18px;
+font-weight: 300;
+color: #b7b7b7;
+letter-spacing: 2px;
+
+}
+.btn_saber{
+ place-self: flex-start;
+  line-height: 1.2;
+  padding: 15px 20px;
+font-weight: 600;
+color: #2b2b2d ;
+display:block;
+letter-spacing:2px;
+}
+
+.our-service{
+background: #F4E19E;
+margin-top: 40px;
+}
+.servicos{
+ max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  
+  
+}
+.servicos h2{
+  position: relative;
+  margin: 45px 0px 40px 0px;
+  color: #212123;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-size: 30px;
+justify-self: center;
+  
+}
+.servicos h2::after{
+  content: "";
+  width: 128px;
+  height: 4px;
+  background: #6F5300;
+  left: -3px;
+  top: -15px;
+  position: absolute;
+  border-radius: 2px;
+}
+.servicos h2::before{
+  content: "";
+  width: 150px;
+  height: 4px;
+  background: #6F5300;
+  right: 2px;
+  top: 45px;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.servicos-item-grid{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 10px;
+ gap: 40px;
+}
+.servico-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.servicos-box-detalhe{
+  border: 2px solid #6F5300;
+  padding: 30px 20px;
+  display: grid;
+  gap: 0px 20px;
+}
+.servicos-box-detalhe img{
+  justify-self: center ;
+ 
+}
+.servicos-box-detalhe h3{
+  justify-self: center ;
+
+}
+.servicos-box-detalhe p{
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.servicos-item-grid .fotocorte{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+.sobre-nos{
+  max-width: 1260px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.sobrenos{
+  margin-bottom: 50px;
+}
+.item{
+  position: relative;
+}
+.detalhe1::before{
+  content: "";
+  position: absolute;
+  width: 106px;
+  height: 4px;
+  background: linear-gradient(#fee482, #ffaa00);
+  border-radius: 2px;
+  left: 555px;
+  top: -8px;
+  display: block;
+}
+.detalhe2::before{
+  content: "";
+  position: absolute;
+  width: 69px;
+  height: 4px;
+  background: #EBBE1D;
+  border-radius: 2px;
+  right: 558px;
+  top: 43px;
+  display: block;
+
+}
+.item h2 {
+ font-size: 30px;
+ line-height: 1.3;
+ letter-spacing: 3px;
+color: #f1f1f1;
+font-weight: 700;
+text-transform: uppercase;
+margin:40px 0px 45px 0px;
+position: relative;
+}
+.sobrenos-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #EBBE1D;
+}
+.barbearia-img img{
+  display: block;
+}
+
+ */
