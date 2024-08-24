@@ -251,10 +251,6 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
-.servico-box:nth-child(odd){
-  padding-top: 360px;
-}
-
 
 .servicos-box-detalhe {
   border: 2px solid #6f5300;
