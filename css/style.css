@@ -247,6 +247,8 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  margin-bottom: 30px;
+
 }
 .servico-box {
   display: grid;
@@ -278,12 +280,11 @@ a {
   line-height: 1.5;
   font-size: 20px;
 }
-
-#contactos {
-  max-width: 1140px;
-  margin: 0 auto;
-  z-index: -1;
+.fotocorte{
+  justify-self: flex-end;
+ max-width: 100%;
 }
+
 .btn_vermais {
   padding: 10px 20px;
   border-radius: 4px;
@@ -296,6 +297,8 @@ a {
 
 #contactos {
   z-index: -5;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 .contactos h2 {
   margin: 20px 0px 40px 0px;
@@ -333,27 +336,26 @@ a {
   grid-gap: 200px;
   color: #d9d9d9;
 }
-.contactos-info-endereco {
-  padding: 20px;
-}
+
 .contactos-info-endereco p,
 .horario p {
-  padding: 10px;
-  background: #ccc;
+  padding: 10px 0px;
+ 
 }
 .horario {
-  padding: 10px;
+  
   display: grid;
   grid-template-columns: auto auto;
 }
 .horario p {
-  margin-top: 10px;
+  margin-right: 10px;
 }
 .realce-contacto {
   color: #ebbe1d;
 }
 footer {
   border-top: 1px solid #757575;
+  margin-top: 20px;
 }
 
 /* 
