@@ -253,7 +253,7 @@ a {
 .servico-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 20px;
 }
 
 .servicos-box-detalhe {
@@ -356,8 +356,47 @@ a {
 footer {
   border-top: 1px solid #757575;
   margin-top: 20px;
+
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.menu-rodape ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+}
+.menu-rodape a{
+  color: #D9D9D9;
+}
+.direitos{
+  color: #D9D9D9;
 }
 
+.network{
+ display: flex;
+ justify-content: flex-end;
+ gap: 20px;
+}
+.menu-rodape a:first-child {
+  border-bottom: 2px solid #ebbe1d;
+  color: #ebbe1d;
+  padding-bottom: 7px;
+}
+.menu-rodape a:hover{
+  border-bottom: 2px solid #ebbe1d;
+  color: #ebbe1d;
+  padding-bottom: 7px;
+  transition: 0.2s;
+}
 /* 
 
 
