@@ -25,7 +25,7 @@
 <body>
   <main>
     <header class="mainscreen">
-      <nav class="header">
+      <nav aria-label="primária" class="header">
         <img src="./img/icons/Logo.svg" alt="logotipo">
         <div class="menu-topo">
           <ul class="menu">
@@ -49,7 +49,7 @@
 
       </nav>
 
-      <section class="banner">
+      <section class="banner" aria-label="area-banner">
         <div class="banner-grid">
           <div class="banner-items">
             <h1>Deixamos-te com uma Aparência Invejável</h1>
@@ -62,24 +62,20 @@
         </div>
       </section>
     </header>
-
-
-
-
-
     <!--Secção Sobre Nós-->
-    <section id="aboutus" class="aboutus grid-center mainscreen">
+    <section aria-label="sobrenós" id="aboutus" class="aboutus grid-center mainscreen">
       <div class="titulo">
         <h2 class="item">Sobre Nós</h2>
         <div class="detalhe"></div>
         <div class="detalhe2"></div>
       </div>
 
-      <article class="aboutus-itens">
+      <article aria-labelledby="descricao" class="aboutus-itens">
         <img src="./img/imagens/85a94aa5ff7043eabeb99b87b36448-barbearia-hermanos-freguesia-d-biz-photo-79b664adccae4784a7ec0fdf21457e-booksy 1 (1).png" alt="espacobarbershop">
         <img src="./img/imagens/Mask group.png" alt="Barbeiro-estilo">
         <div class="paragrafo">
-          <p>Mr. Barbas é a barbearia da sua época., focada em excelência, a Mr. Barbas conta com tudo que o homem moderno precisa.
+          <h2 id="descricao">Ola</h2>
+          <p >Mr. Barbas é a barbearia da sua época., focada em excelência, a Mr. Barbas conta com tudo que o homem moderno precisa.
             Um ambiente confortável, descontraído e maioritariamente masculino, com cuidados para todos os estilos de barba e cabelo bem como serviços de manicure e pedicure. Uma barbearia premium, para cuidar do visual, tomar uma cerveja gelada, navegar pela internet e ainda, assistir aos seus desportos favoritos.</p>
           <a href="./" class="btn_saber foco-cta agendamento-online">Saber Mais...</a>
         </div>
@@ -88,7 +84,7 @@
 
     <!--Secção Nossos Serviços-->
 
-    <section id="our-service">
+    <section aria-label="Nossos Serviços" id="our-service">
       <div class="servicos  grid-center">
         <h2>Nossos Serviços</h2>
 
@@ -133,62 +129,63 @@
 
     </section>
 
-    <section id="contactos">
-      <!-- <a href="./" class="btn_vermais foco-cta ">Ver Mais...</a> -->
-      <div class="contactos grid-center">
-        <h2>Contacte-nos</h2>
-        <div class="contactos-info">
-          <div class="contactos-info-endereco">
-            <p class="endereco"> <span class="realce-contacto">Endereço: </span>Rua Ecos de Ngunza, próximo ao BPC 1º de Maio</p>
-            <p> <span class="realce-contacto">Telefone: </span>+244923009084</p>
-            <p> <span class="realce-contacto">Email:</span> mario.rodrigues@arontic.com</p>
-          </div>
-
-          <div class="horario">
-            <p> <span class="realce-contacto">Segunda à Sexta</span>: 7 às 21 Horas.</p>
-            <p> <span class="realce-contacto">Sábado e Domingo</span>: 8 às 18 Horas .</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer">
-        <div class="direitos">
-          <p>Mr. Barbas-Barbearia | Todos os direitos reservados</p>
-        </div>
-        <div class="menu-rodape">
-          <nav>
-            <ul>
-              <a href="">
-                <li> Home</li>
-              </a>
-              <a href="">
-                <li>Sobre Nós</li>
-              </a>
-              <a href="">
-                <li>Serviços</li>
-              </a>
-              <a href="">
-                <li>Barbeiros</li>
-              </a>
-              <a href="">
-                <li>Preços</li>
-              </a>
-            </ul>
-          </nav>
-        </div>
-        <div class="network">
-          <img src="./img/icons/Face.png" alt="face">
-          <img src="./img/icons/Insta.png" alt="insta">
-          <img src="./img/icons/X.png" alt="x">
-        </div>
-      </div>
-
-    </footer>
-
   </main>
+  <section id="contactos">
+    <!-- <a href="./" class="btn_vermais foco-cta ">Ver Mais...</a> -->
+    <div class="contactos grid-center">
+      <h2>Contacte-nos</h2>
+      <div class="contactos-info">
+        <div class="contactos-info-endereco">
+          <p class="endereco"> <span class="realce-contacto">Endereço: </span>Rua Ecos de Ngunza, próximo ao BPC 1º de Maio</p>
+          <p> <span class="realce-contacto">Telefone: </span>+244923009084</p>
+          <p> <span class="realce-contacto">Email:</span> mario.rodrigues@arontic.com</p>
+        </div>
+
+        <div class="horario">
+          <p> <span class="realce-contacto">Segunda à Sexta</span>: 7 às 21 Horas.</p>
+          <p> <span class="realce-contacto">Sábado e Domingo</span>: 8 às 18 Horas .</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="direitos">
+        <p>Mr. Barbas-Barbearia | Todos os direitos reservados</p>
+      </div>
+      <div class="menu-rodape">
+        <nav>
+          <ul>
+            <a href="">
+              <li> Home</li>
+            </a>
+            <a href="">
+              <li>Sobre Nós</li>
+            </a>
+            <a href="">
+              <li>Serviços</li>
+            </a>
+            <a href="">
+              <li>Barbeiros</li>
+            </a>
+            <a href="">
+              <li>Preços</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <div class="network">
+        <img src="./img/icons/Face.png" alt="face">
+        <img src="./img/icons/Insta.png" alt="insta">
+        <img src="./img/icons/X.png" alt="x">
+      </div>
+    </div>
+
+  </footer>
+
+
 </body>
 
 </html>
