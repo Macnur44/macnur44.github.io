@@ -5,6 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+
 .mainscreen {
   max-width: 1140px;
   margin: 0 auto;
@@ -29,23 +30,27 @@ body {
   gap: 20px;
   list-style-type: none;
 }
-.menu a {
-  padding: 10px 0px;
+
+.menu a{
   color: #d9d9d9;
 }
-.menu a {
-  border-bottom: 2px solid #212123;
+.menu a{
+  padding: 10px 0px;
 }
-.menu a:first-child {
+.menu li{
+  border-bottom: 2px solid #212123;
+  padding: 10px 0px;
+}
+.menu li:first-child {
   border-bottom: 2px solid #ebbe1d;
   color: #ebbe1d;
 }
-.menu a:hover {
+.menu li:hover {
   border-bottom: 2px solid #ebbe1d;
   color: #ebbe1d;
   transition: 0.5s;
 }
-.menu a,
+.menu li,
 .agendamento a {
   text-decoration: none;
 }
