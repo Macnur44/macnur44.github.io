@@ -33,6 +33,7 @@ body {
 .menu li {
   padding: 10px 0px;
   border-bottom: 2px solid #212123;
+  cursor: pointer;
 }
 a{
   text-decoration: none;
