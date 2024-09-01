@@ -305,7 +305,7 @@ display: grid;
 #contactos {
   z-index: -5;
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 0px auto 20px;
 }
 .contactos h2 {
   margin: 20px 0px 40px 0px;
@@ -339,40 +339,42 @@ display: grid;
 }
 .contactos-info {
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-gap: 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+max-width: 1140px;
   color: #d9d9d9;
 }
 
 .contactos-info-endereco p,
 .horario p {
   padding: 10px 0px;
- 
+}
+.contactos-info-endereco p{
+  margin-left: 10px;
 }
 .horario {
-  
-  display: grid;
-  grid-template-columns: auto auto;
+grid-column: 3;
+justify-self: flex-end;
 }
 .horario p {
-  margin-right: 10px;
+  margin-left: 120px;
 }
 .realce-contacto {
   color: #ebbe1d;
 }
 footer {
   border-top: 1px solid #757575;
-  margin-top: 20px;
-
 }
+
 .footer{
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 20px;
-  align-items: center;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 20px;
+ display: grid;
+grid-template-columns: 1fr auto 1fr;
+max-width: 1140px;
+ align-items: center;
+ margin: 0 auto;
+ gap: 20px;
+}
+.direitos p{
+  margin-left: 25px;
 }
 .menu-rodape ul{
   display: flex;
@@ -404,5 +406,7 @@ footer {
   padding-bottom: 7px;
   transition: 0.2s;
 }
+@media (min-width:1085px){
 
+}
 
