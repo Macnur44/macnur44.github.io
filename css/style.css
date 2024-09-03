@@ -484,7 +484,7 @@ max-width: 1140px;
     justify-items: center;
   }
   .banner-grid .btn_primario{
-    margin: -20px 0px 10px 0px;
+    margin: -20px 0px 10px -0px;
   }
   .foto{
 width: 100vw;
