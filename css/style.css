@@ -386,8 +386,8 @@ max-width: 1140px;
   margin-left: 10px;
 }
 .horario {
-grid-column: 3;
-justify-self: flex-end;
+grid-column: 2;
+
 }
 .horario p {
   margin-left: 120px;
@@ -449,6 +449,12 @@ max-width: 1140px;
    text-align: center;
 padding: 20px;
   }
+  footer p{
+    font-size: 12px;
+  }
+  .footer{
+padding: 10px 20px 10px 0px;
+  }
   .servicos-box-detalhe{
     border-radius: 50px;
     margin-top: -10px;
@@ -467,15 +473,42 @@ padding: 20px;
   .servicos-item-grid .fotocorte{
     display: none;
   }
+  .contactos-info{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    
+  }
+
+  .contactos-info p{
+    font-size: 12px;
+  }
+  .horario {
+justify-items: center;
+
+  
+    }
+    .horario p {
+margin-left: 0px;
+    }
 
 }
 @media (min-width:500px) and (max-width:800px){
+  footer p{
+    font-size: 12px;
+  }
+  .footer{
+padding: 10px 20px 10px 0px;
+  }
   .servicos-item-grid{
     grid-template-columns: 1fr;
     margin: 0px 40px;
    }
    .servicos-item-grid .fotocorte{
     display: none;
+   }
+   .contactos-info{
+    grid-template-columns: 1fr;
+
    }
 }
 @media (min-width:800px) and (max-width:1140px){
