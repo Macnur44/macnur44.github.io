@@ -19,11 +19,53 @@ body {
   align-items: center;
   /* padding: 0px 65px 10px 75px; */
 }
+nav{
+  position: relative;
+}
+.menu-hb-items{
+display: grid;
+gap: 5px;
+}
 
 .menu-topo {
   justify-self: flex-end;
   margin-right: 10px;
 }
+/* Menu Hamburguer */
+.menuhb{
+ max-width: 100%;
+  right: 25px;
+  border-radius: 4px;
+  top: 15px;
+  position: absolute;
+  background: rgba(0, 0, 0,0.9);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+gap: 20px;
+justify-items: center;
+align-items: center;
+  cursor: pointer;
+  padding: 15px;
+  color: #fff;
+  display: none;
+}
+.menuhb:hover{
+background:#363636;
+}
+.menuhb-item:hover{
+  background: #B79005;
+}
+.menuhb-item{
+  width: 30px;
+  height: 2px;
+  border-radius: 2;
+  background: #ebbe1d;
+  
+}
+.menuhb.detalhe{
+
+}
+
 .menu {
   display: flex;
   gap: 20px;
@@ -205,7 +247,6 @@ a {
   background: #f4e19e;
   margin-top: 40px;
   margin-bottom: 30px;
- 
 }
 .servicos {
   max-width: 1140px;
@@ -245,34 +286,31 @@ a {
   border-radius: 2px;
 }
 
-.servicos-item-grid {
-  display: flex;
- margin-bottom: 40px;
- gap: 40px;
-
+.servicos-item-grid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 40px;
+position: relative;
 }
 .servico-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
- gap: 40px;
-  
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
 }
-
 .servicos-box-detalhe {
   border: 2px solid #6f5300;
   padding: 20px 20px;
-display: grid;
-  gap: 20px;
   border-radius: 4px;
 }
-
-.servicos-box-detalhe img {
-  justify-self: center;
+.fotocorte{
+  display: block;
+  max-width: 100%;
 }
-.servicos-box img {
-  margin-top: 50px;
-  position: relative;
-  z-index: 2;
+
+.servicos-item-grid img {
+  object-fit: cover;
+  object-position: top right;
 }
 
 .servicos-box-detalhe h3 {
@@ -282,15 +320,11 @@ display: grid;
 .servicos-box-detalhe p {
   line-height: 1.5;
   font-size: 24px;
-  
 }
-.fotocorte{
-  justify-self: flex-end;
- max-width: 100%;
- height: 700px;
- position: relative;
- z-index: 1;
+.servicos-box-detalhe img {
+justify-self: center;
 }
+
 
 .btn_vermais {
   padding: 10px 20px;
@@ -301,7 +335,6 @@ display: grid;
   display: inline-block;
   margin: 10px 0px 20px 0;
 }
-
 #contactos {
   z-index: -5;
   max-width: 1140px;
@@ -406,7 +439,44 @@ max-width: 1140px;
   padding-bottom: 7px;
   transition: 0.2s;
 }
-@media (min-width:1085px){
-
+@media (min-width:1000px) and (max-width:1140px) {
+.contactos-info{
+padding: 0px 15px;
+  grid-template-columns: 1fr 1fr;
+}
 }
 
+@media (min-width:850px) and (max-width:1000px) {
+
+ .servicos-item-grid{
+  grid-template-columns: 1fr;
+  margin: 0px 40px;
+ }
+ .servicos-item-grid .fotocorte{
+  display: none;
+ }
+  
+  }
+
+  @media(min-width:200px) and (max-width:1000px){
+    .header{
+align-self: center;
+     display: grid;
+ margin: 0px 25px;
+    }
+    .menuhb{
+   display: grid;
+   justify: center;
+   top: 40px;     
+
+    }
+    .menu-hb-items:hover{
+      background: #6f5300;
+    }
+    .menu-topo{
+      display: none;
+    }
+    .agenda{
+      display: none;
+    }
+  }
