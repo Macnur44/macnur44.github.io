@@ -216,10 +216,13 @@ a {
 .aboutus-itens {
   display: grid;
   grid-template-columns: auto auto 1fr;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .aboutus-itens img {
   display: block;
+  max-width: 100%;
 }
 .paragrafo {
   display: grid;
@@ -237,12 +240,14 @@ a {
   color: #2b2b2d;
   display: block;
   letter-spacing: 2px;
+  margin-top: 20px;
 }
 
 #our-service {
   background: #f4e19e;
   margin-top: 40px;
   margin-bottom: 30px;
+  width: 100vw;
 }
 .servicos {
   max-width: 1140px;
@@ -439,6 +444,29 @@ max-width: 1140px;
 /* RESPONSIVIDADE */
 
 @media (min-width:250px) and (max-width:500px){
+  .servico-box{
+    grid-template-columns: 1fr 1fr;
+   text-align: center;
+padding: 20px;
+  }
+  .servicos-box-detalhe{
+    border-radius: 50px;
+    margin-top: -10px;
+    display: grid;
+    background: #F5CB37;
+  }
+
+  .servicos-item-grid p{
+    font-size: 1.2rem;
+    display: none;
+  }
+  .servicos-item-grid p{
+    font-size: 1.2rem;
+    display: none;
+  }
+  .servicos-item-grid .fotocorte{
+    display: none;
+  }
 
 }
 @media (min-width:500px) and (max-width:800px){
@@ -458,9 +486,7 @@ max-width: 1140px;
 }
 
 @media (max-width:860px){
-  .header{
-    align-self: center;
-         display: grid;
+  nav{
      margin: 0px 15px;
         }
         .menuhb{
@@ -477,6 +503,52 @@ max-width: 1140px;
         .banner-grid{
           margin: 15px;
         }
+      .aboutus-itens{
+        grid-template-columns: 1fr 1fr ;
+        margin: 25px;
+        justify-items: center;
+      
+      }
+      .aboutus-itens a{
+        justify-self: center;
+align-self: center;
+
+      }
+      .aboutus-itens .paragrafo{
+grid-row: 1;
+font-size: 1rem;
+margin-top: -40px;
+grid-column: 1/ -1;
+      }
+  
+      .txt-continuacao{
+        display: none;
+      }
+      .aboutus-itens img{
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+      }
+      #our-service{
+        margin-top: -10px;
+      }
+      .servicos h2{
+        font-size: 1.5rem;
+      }
+      .servicos h2::after{
+        width: 105px;
+      }
+      .servicos h2::before{
+        width: 125px;
+      }
+
+      .servicos-item-grid{
+        grid-template-columns: 1fr;
+      }
+      .servicos-item-grid p{
+        font-size: 1.2rem;
+      }
+      
 }
 @media (max-width:660px){
   .banner-grid{
@@ -515,6 +587,9 @@ margin-top: -30px;
   .foto{
 width: 100vw;
 border-radius: 0px;
+  }
+  #aboutus{
+    margin-top: 25px;
   }
 
 }
