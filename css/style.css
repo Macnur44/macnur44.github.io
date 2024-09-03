@@ -33,39 +33,35 @@ gap: 5px;
 }
 /* Menu Hamburguer */
 .menuhb{
- max-width: 100%;
-  right: 25px;
+  right: 0px;
   border-radius: 4px;
   top: 15px;
   position: absolute;
-  background: rgba(0, 0, 0,0.9);
+  background: rgba(0, 0, 0,0.6);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-gap: 20px;
-justify-items: center;
-align-items: center;
+  grid-template-columns: 1fr auto;
+gap: 15px;
+place-items: center;
   cursor: pointer;
   padding: 15px;
-  color: #fff;
+  color: #ccc;
   display: none;
 }
-.menuhb:hover{
-background:#363636;
+.menuhb h3{
+  font-size: 20px;
+  font-weight: 400;
+  color: #D9D9D9;
+  letter-spacing: 1.2px;
 }
-.menuhb-item:hover{
-  background: #B79005;
+.menuhb:hover{
+background:#757575;
 }
 .menuhb-item{
   width: 30px;
   height: 2px;
   border-radius: 2;
-  background: #ebbe1d;
-  
+  background: #D9D9D9;
 }
-.menuhb.detalhe{
-
-}
-
 .menu {
   display: flex;
   gap: 20px;
@@ -439,44 +435,66 @@ max-width: 1140px;
   padding-bottom: 7px;
   transition: 0.2s;
 }
-@media (min-width:1000px) and (max-width:1140px) {
-.contactos-info{
-padding: 0px 15px;
-  grid-template-columns: 1fr 1fr;
+
+/* RESPONSIVIDADE */
+
+@media (min-width:250px) and (max-width:500px){
+
 }
+@media (min-width:500px) and (max-width:800px){
+  .servicos-item-grid{
+    grid-template-columns: 1fr;
+    margin: 0px 40px;
+   }
+   .servicos-item-grid .fotocorte{
+    display: none;
+   }
+}
+@media (min-width:800px) and (max-width:1140px){
+  .contactos-info{
+    padding: 0px 15px;
+      grid-template-columns: 1fr 1fr;
+    }
 }
 
-@media (min-width:850px) and (max-width:1000px) {
-
- .servicos-item-grid{
-  grid-template-columns: 1fr;
-  margin: 0px 40px;
- }
- .servicos-item-grid .fotocorte{
-  display: none;
- }
-  
+@media (max-width:860px){
+  .header{
+    align-self: center;
+         display: grid;
+     margin: 0px 25px;
+        }
+        .menuhb{
+       display: grid;
+       justify-self: center;
+       top: 40px;     
+        }
+        .menu-topo{
+          display: none;
+        }
+        .agenda{
+          display: none;
+        }
+        .banner-grid{
+          margin: 25px;
+        }
+}
+@media (max-width:660px){
+  .banner-grid{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .banner-grid .btn_primario{
+    margin: -20px 0px 10px 0px;
+  }
+  .foto{
+width: 100vw;
+border-radius: 0px;
   }
 
-  @media(min-width:200px) and (max-width:1000px){
-    .header{
-align-self: center;
-     display: grid;
- margin: 0px 25px;
-    }
-    .menuhb{
-   display: grid;
-   justify: center;
-   top: 40px;     
+}
 
-    }
-    .menu-hb-items:hover{
-      background: #6f5300;
-    }
-    .menu-topo{
-      display: none;
-    }
-    .agenda{
-      display: none;
-    }
-  }
+
+
+
+
+
